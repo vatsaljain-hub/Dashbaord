@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Transaction Dashbaord</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-1" aria-controls="submenu-1"><i
+                                        class="fa fa-fw fa-user-circle"></i>Dashboard <span
+                                        class="badge badge-success">6</span></a>
+                                <div id="submenu-1" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                                data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+                                            <div id="submenu-1-2" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="index.html">E Commerce Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="ecommerce-product.html">Product
+                                                            List</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="ecommerce-product-single.html">Product
+                                                            Single</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link"
+                                                            href="ecommerce-product-checkout.html">Product Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="dashboard-finance.html">Finance</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="dashboard-sales.html">Sales</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                                data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
+                                            <div id="submenu-1-1" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link"
+                                                            href="dashboard-influencer.html">Influencer</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="influencer-finder.html">Influencer
+                                                            Finder</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="influencer-profile.html">Influencer
+                                                            Profile</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-2" aria-controls="submenu-2"><i
+                                        class="fa fa-fw fa-rocket"></i>UI Elements</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse"><i
+                                        class="fas fa-fw fa-chart-pie"></i>Chart</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse"><i
+                                        class="fab fa-fw fa-wpforms"></i>Forms</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-5" aria-controls="submenu-5"><i
+                                        class="fas fa-fw fa-table"></i>Tables</a>
+
+                            </li>
+
+                            <li class="nav-divider">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i>
+                                    Pages </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-7" aria-controls="submenu-7"><i
+                                        class="fas fa-fw fa-inbox"></i>Apps <span
+                                        class="badge badge-secondary">New</span></a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-8" aria-controls="submenu-8"><i
+                                        class="fas fa-fw fa-columns"></i>Icons</a>
+
+                            </li>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+                  
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title"> Good Morning , Emila Birch </h2>
+                                <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus
+                                    vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    Overview
+                    <div class="ecommerce-widget">
+                        <div class="row">
+                            
+
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-13 col-13">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <i class='fas fa-balance-scale' style='font-size:24px'></i>
+                                        <h5 class="text-muted">Account Balance</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$30,659.45</h1>
+                                        </div>
+                                        <div
+                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                            <tr>
+                                                <td colspan="9"><a href="#"
+                                                        class="btn btn-outline-light float-right">View All</a></td>
+                                            </tr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-13 col-13">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <i class="material-icons" style="font-size:36px"> sync</i>
+                                        <h5 class="text-muted">Pending</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">-$19,500.00</h1>
+                                        </div>
+                                        <div
+                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                            <tr>
+                                                <td colspan="9"><a href="#"
+                                                        class="btn btn-outline-light float-right">View All</a></td>
+                                            </tr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-13 col-13">
+                                <div class="card border-3 border-top border-top-primary">
+                                    <div class="card-body">
+                                        <i class='fas fa-redo' style='font-size:24px'></i>
+                                        <h5 class="text-muted">Processed (last 30 Days)</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">13000</h1>
+                                        </div>
+
+                                        <div
+                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                            <tr>
+                                                <td colspan="9"><a href="#"
+                                                        class="btn btn-outline-light float-right">View All</a></td>
+                                            </tr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+
+                            <div class="row">
+                            
+
+
+
+
+                                <div class="row">
+                                    <div class="col-xl-30 col-lg-32 col-md-10 col-sm-20 col-22">
+                                        <div class="card">
+                                            <h5 class="card-header">Recent Activity</h5>
+                                            <div class="card-body p-0">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead class="bg-light">
+                                                            <tr class="border-0">
+
+
+                                                                <th class="border-0">Product Name</th>
+                                                                <th class="border-0">Amount</th>
+                                                                <th class="border-0">status</th>
+                                                                <th class="border-0">Date</th>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+
+                                                                <td> <i class='far fa-credit-card'></i> Payment to Mally  Senders </td>
+
+                                                                <td class="font-bold "> $20,000 USD</td>
+                                                                <td><a href="#" class="badge badge-success">Success</a>
+                                                                <td>July 11,2020</td>
+
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td> <i class='far fa-credit-card'></i> Payment to Mally
+                                                                    Senders </td>
+
+                                                                <td class="font-bold "> $20,000 USD</td>
+                                                                <td><a href="#" class="badge badge-warning">Processing</a>
+                                                                <td>July 5,2021</td>
+
+                                                           
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+
+                                                                <td> <i class='far fa-credit-card'></i> Payment to Mally
+                                                                    Senders </td>
+                                                                <td class="font-bold "> $20,000 USD</td>
+                                                                <td><a href="#" class="badge badge-light">Failed
+                                                                </a>
+                                                                <td>July 13,2020</td>
+
+                                                               
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+
+                                                                <td> <i class='far fa-credit-card'></i> Payment to Mally
+                                                                    Senders </td>
+
+                                                                <td class="font-bold "> $20,000 USD</td>
+                                                                <td><a href="#" class="badge badge-warning">Processing</a>
+                                                            
+                                                                </td>
+                                                                <td>July 12,2021</td>
+
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="9"><a href="#"
+                                                                        class="btn btn-outline-light float-right">View
+                                                                        Details</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                
+                            </div>
+                           
+</html>
